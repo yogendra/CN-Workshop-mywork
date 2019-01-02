@@ -1,4 +1,7 @@
 management:
+  cloudfoundry:
+    enabled: true
+    skip-ssl-validation: false
   endpoint:
     health:
       show-details: always
@@ -6,6 +9,9 @@ management:
     web:
       exposure:
         include: "*"
+  info:
+    git:
+      mode: full
 
 info: # add this section
   build:
