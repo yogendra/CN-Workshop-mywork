@@ -1,3 +1,10 @@
+info: # add this section
+  build:
+    artifact: @project.artifactId@
+    name: @project.name@
+    description: @project.description@
+    version: @project.version@
+
 management:
   cloudfoundry:
     enabled: true
@@ -13,9 +20,6 @@ management:
     git:
       mode: full
 
-info: # add this section
-  build:
-    artifact: @project.artifactId@
-    name: @project.name@
-    description: @project.description@
-    version: @project.version@
+spring:
+  application:
+    name: cloud-native-spring
