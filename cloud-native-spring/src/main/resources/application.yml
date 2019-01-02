@@ -3,3 +3,10 @@ management:
     web:
       exposure:
         include: "*"
+
+info: # add this section
+  build:
+    artifact: @project.artifactId@
+    name: @project.name@
+    description: @project.description@
+    version: @project.version@
