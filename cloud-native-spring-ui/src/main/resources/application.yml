@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: cloud-native-spring-ui
+  data: # Required to remediate conflicting '/' endpoint
+    rest:
+      base-path: /api
+---
+# Defining a local profile remediate port conflict with cloud-native-spring project
+spring:
+  profiles: local
+server:
+  port: 8081
